@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Bola",
+            "request": "launch",
+            "mainClass": "Bola"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Lingkaran",
+            "request": "launch",
+            "mainClass": "Lingkaran"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Sapi",
+            "request": "launch",
+            "mainClass": "Sapi"
+        }
+    ]
+}
