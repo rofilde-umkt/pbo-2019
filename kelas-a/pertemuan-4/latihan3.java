@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class GradeNilai
 {
     int nilai; 
@@ -22,7 +24,12 @@ class NilaiMahasiswa
 {
     public static void main(String[] args) {
         GradeNilai nilaiPBO = new GradeNilai();
-        nilaiPBO.nilai = 55;
+
+        System.out.print("Berapakah Nilai Anda? ");
+        
+        Scanner keyboard = new Scanner(System.in);
+        nilaiPBO.nilai = keyboard.nextInt();
+        
         System.out.println("Huruf dari nilai " + nilaiPBO.nilai + " = " + nilaiPBO.huruf());
     }
 }
