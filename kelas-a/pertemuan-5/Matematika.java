@@ -27,7 +27,21 @@ public class Matematika
 
     public void setBilangan2(int bilangan)
     {
+        if (bilangan == 0) {
+            System.out.println("Pembagi tidak boleh 0");
+            System.exit(0);
+        }
         this.bilangan2 = bilangan;
+    }
+
+    public int getBilangan1()
+    {
+        return this.bilangan1;
+    }
+
+    public int getBilangan2()
+    {
+        return this.bilangan2;
     }
 }
 
@@ -43,6 +57,8 @@ class Hitungan
         
         System.out.println("Masukan Bilangan 2 = ");
         hitungan.setBilangan2(keyboard.nextInt());
+        
+        System.out.println(hitungan.getBilangan1());
 
         
         System.out.println("Jumlahnya ialah " + hitungan.penjumlahan());
