@@ -1,0 +1,4 @@
+class Bola 
+{
+    int jari2; 
+}
