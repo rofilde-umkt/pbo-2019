@@ -15,7 +15,16 @@ class Mahasiswa
         this.semester = 1;
         this.maksimalSemester = 14;
 
-        sayHello();
+
+    }
+    public void sayHello(String kalimat, String apalah)
+    {
+        System.out.println(kalimat);
+    }
+
+    public void sayHello(String kalimat)
+    {
+        System.out.println(kalimat);
     }
 
     public void sayHello()
@@ -53,6 +62,9 @@ class Kuliah
         dewi.setSemester(3);
         System.out.println(dewi.getSemester());
         System.out.println(dewi.getLabelSemester());
-         
+        dewi.sayHello();
+
+        Mahasiswa sinta = new Mahasiswa();
+        sinta.sayHello("Hello Sis...!");
     }
 }
