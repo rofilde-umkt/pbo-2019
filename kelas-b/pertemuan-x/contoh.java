@@ -6,6 +6,7 @@ class Mahasiswa
     private int maksimalSemester;
 
     /**
+     * Deskripsi: Gunakan constructor ini untuk mahasiswa baru
      * Constructor: Method ini dieksekusi secara otomatis saat membuat objek
      * Cirinya: Nama Method sama dengan nama Kelas
      * 
@@ -17,6 +18,24 @@ class Mahasiswa
 
 
     }
+
+    /**
+     * Deskripsi: Gunakan constructor ini untuk mahasiswa transfer atau alih jenjang
+     * Constructor: Method ini dieksekusi secara otomatis saat membuat objek
+     * Cirinya: Nama Method sama dengan nama Kelas
+     * 
+     */ 
+    public Mahasiswa(int semester)
+    {
+        this.semester = semester;
+        this.maksimalSemester = 14;
+
+
+    }
+
+    
+
+
     public void sayHello(String kalimat, String apalah)
     {
         System.out.println(kalimat);
@@ -51,6 +70,29 @@ class Mahasiswa
         return "Ganjil";
     }
 
+
+    public static void suara()
+    {
+        System.out.println("Aku disini.....!!!!");
+    }
+
+    public Mahasiswa makan()
+    {
+        System.out.println("Makan....Kenyang");
+
+        return this;
+    }
+
+    public Mahasiswa tidur()
+    {
+        System.out.println("Tidur larut");
+
+        return this;
+    }
+
+    public void kuliah() {
+        System.out.println("Kuliah g mandi");
+    }
 }
 
 
@@ -66,5 +108,12 @@ class Kuliah
 
         Mahasiswa sinta = new Mahasiswa();
         sinta.sayHello("Hello Sis...!");
+
+
+        Mahasiswa andi = new Mahasiswa(4);
+
+        System.out.println(andi.getSemester());
+
+        andi.makan().tidur().kuliah();
     }
 }
